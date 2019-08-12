@@ -1,0 +1,12 @@
+---
+
+version: 2
+jobs:
+  job_test:
+    pass
+
+workflows:
+  version: 2
+  workflow_test:
+    jobs:
+      - job_test

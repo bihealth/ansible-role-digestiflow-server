@@ -1,0 +1,12 @@
+---
+
+# Also see the defaults of bihealth.sodar_core_app.
+
+# Git repository to get app from.
+digestiflow_git_repo: "https://github.com/bihealth/digestiflow-server.git"
+
+# Tag to use for email prefix.
+digestiflow_email_prefix: "[DigestiFlow]"
+
+# Number of celery workers to spawn for the default queue.
+digestiflow_celery_workers: 8

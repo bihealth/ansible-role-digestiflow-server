@@ -1,0 +1,14 @@
+---
+
+# bihealth.sodar_core_app -------------------------------------------------------------------------
+
+sodar_core_app_name: digestiflow
+sodar_core_app_git_repo: "{{ digestiflow_git_repo }}"
+sodar_core_app_email_prefix: "{{ digestiflow_email_prefix }}"
+sodar_core_app_celery_enabled: true
+sodar_core_app_celery_workers_default: "{{ digestiflow_celery_workers }}"
+
+# bihealth.python3 --------------------------------------------------------------------------------
+
+python3_versions:
+  - "3.6"
