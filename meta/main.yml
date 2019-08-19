@@ -3,7 +3,7 @@
 galaxy_info:
   role_name: digestiflow_server
   author: Manuel Holtgrewe
-  description: Setup DigestiFlow server.
+  description: Setup of DigestiFlow server.
   company: Core Unit Bioinformatics (CUBI), Berlin Institute of Health (BIH)
   license: MIT
   min_ansible_version: 2.8
@@ -28,4 +28,4 @@ galaxy_info:
     - django
 
 dependencies:
-- role: bihealth.sodar_core_app
+  - role: bihealth.sodar_core_app
