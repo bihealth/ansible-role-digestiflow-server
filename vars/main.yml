@@ -8,6 +8,15 @@ sodar_core_app_email_prefix: "{{ digestiflow_email_prefix }}"
 sodar_core_app_celery_enabled: true
 sodar_core_app_celery_workers_default: "{{ digestiflow_celery_workers }}"
 
+sodar_core_app_systemd_env_snippet: |
+  {% if digestiflow_enable_sentry %}
+  ENABLE_SENTRY={{ 1 if digestiflow_enable_sentry else 0 }}
+  SENTRY_DSN="{{ digestiflow_sentry_dsn }}"
+  {% endif %}
+
+  FILEBOXES_ENABLED={{ 1 if digestiflow_enable_fileboxes else 0 }}
+  FILEBOXES_BASE_URL={{ digestiflow_fileboxes_base_url if digestiflow_fileboxes_base_url else "" }}
+
 # bihealth.python3 --------------------------------------------------------------------------------
 
 python3_versions:

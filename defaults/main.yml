@@ -10,3 +10,9 @@ digestiflow_email_prefix: "[DigestiFlow]"
 
 # Number of celery workers to spawn for the default queue.
 digestiflow_celery_workers: 8
+
+# Whether or not the fileboxes feature is enabled.
+digestiflow_enable_fileboxes: false
+
+# Base URL for exchange server.
+digestiflow_fileboxes_base_url: null
